@@ -2,7 +2,7 @@
   "name": "language-cairo",
   "version": "0.1.0",
   "description": "Cairo language support for Atom",
-  "repository": "https://github.com/xshitaka/atom-language-cairo",
+  "repository": "git@github.com:xshitaka/atom-language-cairo.git",
   "keywords": [
     "cairo",
     "starknet"
