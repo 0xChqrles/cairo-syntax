@@ -20,3 +20,18 @@ repository:
         name: 'comment.line.number-sign'
       }
     ]
+  strings:
+    patterns: [
+      {
+        begin: '\''
+        end: '\''
+        name: 'string.interpolated'
+        contentName: 'entity'
+      }
+      {
+        begin: '"'
+        end: '"'
+        name: 'string.interpolated'
+        contentName: 'entity'
+      }
+    ]
