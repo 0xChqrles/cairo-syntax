@@ -1,0 +1,12 @@
+'scopeName': 'source.cairo'
+'name': 'Cairo'
+'fileTypes': [
+  "cairo"
+]
+'patterns': [
+  {
+    comment: "Comments"
+    match: /#.*/
+    name: "comment"
+  }
+]

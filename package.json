@@ -1,0 +1,15 @@
+{
+  "name": "language-cairo",
+  "version": "0.0.2",
+  "description": "Cairo language support for Atom",
+  "repository": "https://github.com/xshitaka/atom-language-cairo",
+  "keywords": [
+    "cairo",
+    "starknet"
+  ],
+  "author": "Ashitaka",
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  }
+}

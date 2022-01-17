@@ -1,2 +1,2 @@
-# atom-language-cairo
-Cairo language support for Atom
+# Cairo language support in Atom
+Adds syntax highlighting for Cairo in Atom.

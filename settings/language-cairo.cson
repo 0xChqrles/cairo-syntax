@@ -1,0 +1,3 @@
+'.source.cairo':
+  'editor':
+    'commentStart': '# '
