@@ -3,10 +3,5 @@
 'fileTypes': [
   "cairo"
 ]
-'patterns': [
-  {
-    comment: "Comments"
-    match: /#.*/
-    name: "comment"
-  }
-]
+comments:
+  start: '#'
