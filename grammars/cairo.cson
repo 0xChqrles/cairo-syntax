@@ -1,7 +1,22 @@
-'scopeName': 'source.cairo'
-'name': 'Cairo'
-'fileTypes': [
-  "cairo"
+scopeName: 'source.cairo'
+name: 'Cairo'
+fileTypes: [
+  'cairo'
 ]
-comments:
-  start: '#'
+
+patterns: [
+  {include: '#comments'}
+]
+
+repository:
+  comments:
+    patterns: [
+      {
+        begin: '#'
+        beginCaptures:
+          0:
+            name: 'punctuation.definition.comment'
+        end: '$'
+        name: 'comment.line.number-sign'
+      }
+    ]
