@@ -1,6 +1,6 @@
 {
   "name": "language-cairo",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Cairo language support for Atom",
   "repository": {
     "type": "git",
