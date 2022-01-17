@@ -6,6 +6,7 @@ fileTypes: [
 
 patterns: [
   {include: '#comments'}
+  {include: '#strings'}
 ]
 
 repository:
