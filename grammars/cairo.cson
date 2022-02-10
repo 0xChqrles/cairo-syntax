@@ -186,7 +186,7 @@
         'match': '(:)\\s*([_$[:alpha:]][_$[:alnum:]]+)'
         'captures':
           1:
-            'name': 'punctuation.separator.key-value'
+            'name': 'keyword.operator'
           2:
             'name': 'support.type.cairo'
       }
@@ -223,6 +223,7 @@
           {'include': '#comment'}
           {'include': '#literal'}
           {'include': '#identifiers'}
+          {'include': '#expression-operators'}
         ]
       }
     ]
@@ -249,7 +250,7 @@
           1:
             'name': 'punctuation.separator.dot-accessor.cairo'
           2:
-            'name': 'punctuation.separator.pointer-accessor.cairo'
+            'name': 'keyword.operator'
       }
     ]
   'punctuation-semicolon':
@@ -266,20 +267,8 @@
         'match': '\\%\\{|\\%\\}'
       }
       {
-        'match': '\\+\\+'
-        'name': 'keyword.operator.increment.cairo'
-      }
-      {
-        'match': '='
-        'name': 'keyword.operator.assignment.cairo'
-      }
-      {
-        'match': '&'
-        'name': 'keyword.operator.address.cairo'
-      }
-      {
-        'match': '\\*|/|-|\\+'
-        'name': 'keyword.operator.cairo'
+        'match': '=|!|>|<|\||&|\?|:|\^|~|\*|\+|\-|\/|\%'
+        'name': 'keyword.operator'
       }
       {
         'match': '(?<![\\w$])(cast)(?![\\w$])'
