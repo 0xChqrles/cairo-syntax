@@ -186,7 +186,7 @@
         'match': '(:)\\s*([_$[:alpha:]][_$[:alnum:]]+)'
         'captures':
           1:
-            'name': 'keyword.operator'
+            'name': 'punctuation.separator'
           2:
             'name': 'support.type.cairo'
       }
@@ -268,7 +268,7 @@
       }
       {
         'name': 'keyword.operator'
-        'match': '=|!|>|<|\\||&|\\?|:|\\^|~|\\*|\\+|\\-|\\/|\\%'
+        'match': '=|!|>|<|\\||&|\\?|\\^|~|\\*|\\+|\\-|\\/|\\%'
       }
       {
         'match': '(?<![\\w$])(cast)(?![\\w$])'
