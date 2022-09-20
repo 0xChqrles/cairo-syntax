@@ -36,17 +36,11 @@
     'patterns': [
       {
         'name': 'comment.line.number-sign'
-        'begin': '#'
+        'begin': '//'
         'beginCaptures':
           '0':
             'name': 'punctuation.definition.comment'
         'end': '$'
-        'patterns': [
-          {
-            'name': 'comment.line.number-sign'
-            'match': 'TODO'
-          }
-        ]
       }
     ]
   'string':
@@ -88,7 +82,7 @@
   'storages':
     'patterns': [
       {
-        'match': '\\b(let|const|local|struct|member|alloc_locals|tempvar)\\b'
+        'match': '\\b(let|const|local|struct|alloc_locals|tempvar)\\b'
         'name': 'storage.type.cairo'
       }
     ]
@@ -96,7 +90,7 @@
     'patterns': [
       {
         'name': 'keyword.controls.cairo'
-        'match': '\\b(else|if|in|return|end|assert|with_attr)\\b'
+        'match': '\\b(else|if|in|return|assert|with_attr)\\b'
       }
       {
         'name': 'keyword.declaration.cairo'
@@ -117,7 +111,7 @@
             'name': 'storage.type.function.cairo'
           '2':
             'name': 'entity.name.function.cairo'
-        'end': '(?<=:)'
+        'end': '(?<={)'
         'patterns': [
           {'include': '#comment'}
           {'include': '#function-implicit'}
@@ -132,8 +126,8 @@
   'function-implicit':
     'patterns': [
       {
-        'begin': '\\{'
-        'end': '\\}'
+        'begin': '(?<=[a-zA-Z0-9])\\s*{'
+        'end': '}'
         'patterns': [
           {'include': '#parameters'}
         ]
