@@ -98,7 +98,7 @@
       }
       {
         'name': 'keyword.others.cairo'
-        'match': '^\\s*@(constructor|storage_var|view|external|contract_interface|known_ap_change|event)\\s+'
+        'match': '^\\s*@(constructor|storage_var|view|external|raw_output|raw_input|l1_handler|contract_interface|known_ap_change|event)\\s+'
       }
     ]
   'function-expression':
