@@ -7,7 +7,7 @@
     "cairo",
     "starknet"
   ],
-  "author": "Ashitaka",
+  "author": "0xChqrles",
   "license": "MIT",
   "engines": {
     "atom": "*"
