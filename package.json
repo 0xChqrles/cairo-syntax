@@ -1,0 +1,25 @@
+{
+  "name": "cairo-language",
+  "license": "MIT",
+  "publisher": "0xChqrles",
+  "displayName": "Cairo Syntax",
+  "description": "Provides syntax highlighting for Cairo files",
+  "version": "0.8.1",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "contributes": {
+    "languages": [{
+      "id": "cairo",
+      "aliases": ["Cairo", "cairo"],
+      "extensions": [".cairo"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cairo",
+      "scopeName": "source.cairo",
+      "path": "./syntaxes/cairo.tmLanguage.json"
+    }]
+  },
+  "repository": "https://github.com/0xChqrles/cairo-syntax/"
+}
